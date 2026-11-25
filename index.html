@@ -7,6 +7,30 @@
     <link rel="stylesheet" href="weather-style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Weather Forecast</h1>
+        <div class="search-section">
+		    <input type="text" id="cityInput" placeholder="Enter city name...">
+		    <button id="searchButton">Get Weather</button>
+        </div>
+        <div id="loadingMessage" class="loading hidden">Loading weather data...</div>
+        <div id="errorMessage" class="error hidden"></div>
+        <div id="weatherDisplay" class="weather-info hidden">
+            <h2 id="cityName"></h2>
+            <div class="temperature" id="temperature"></div>
+            <div class="description" id="description"></div>
+            <div class="details">
+                <div class="detail-item">
+                    <span class="label">Feels like:</span>
+                    <span id="feelsLike"></span>
+                </div>
+                <div class="detail-item">
+                    <span class="label">Humidity:</span>
+                    <span id="humidity"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather-script.js"></script>
 </body>
 </html>
